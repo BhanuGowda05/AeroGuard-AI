@@ -179,3 +179,15 @@ Each alert includes an interactive expandable section detailing the thermodynami
 - **Thermodynamic Digital Twin Physics:** Integrate full 1D thermodynamic differential equations (calculating volumetric efficiency and indicated mean effective pressure).
 - **Remaining Useful Life (RUL) Prognostics:** Train physics-informed neural networks (PINNs) on historical engine teardown data to predict hours until component failure.
 - **Edge Deployment:** Package the lightweight Python runtime onto radiation-hardened onboard UAV mission computers (e.g., NVIDIA Jetson Orin Defence).
+
+---
+
+## 👥 11. Project Team Members & Contributors
+
+| Team Member | GitHub Profile | Project Role |
+| :--- | :--- | :--- |
+| **Bhanushree G** | [@BhanuGowda05](https://github.com/BhanuGowda05/) | Digital Twin Architecture & System Integration |
+| **Pallabi Mandal** | [@pallabimandal511](https://github.com/pallabimandal511) | Anomaly Detection & Sensor Telemetry Analytics |
+| **Shaik Hazibee** | [@Hazibee](https://github.com/Hazibee) | Mission Reliability & Prognostics Modeling |
+| **Pavani** | [@pavanikottakap702-afk](https://github.com/pavanikottakap702-afk) | Explainable AI & Prescriptive Maintenance Systems |
+
