@@ -1,29 +1,29 @@
 # 🚀 AeroGuard AI – AI-Powered Digital Twin for Aero Engine Health Monitoring
 
-An intelligent, software-based digital twin prototype designed for health monitoring, fault detection, and mission reliability analysis of aero piston engines used in MALE (Medium Altitude Long Endurance) UAVs.
+An intelligent, software-based digital twin prototype designed for health monitoring, fault detection and mission reliability analysis of aero piston engines used in MALE (Medium Altitude Long Endurance) UAVs.
 
-AeroGuard AI demonstrates how engine sensor data can be monitored and analysed in real time to identify abnormal operating conditions, simulate critical engine faults, calculate comprehensive engine health scores, and provide explainable maintenance recommendations through an interactive aerospace dashboard.
+AeroGuard AI demonstrates how engine sensor data can be monitored and analysed in real time to identify abnormal conditions, simulate engine faults, calculate engine health scores and provide explainable maintenance recommendations through an interactive dashboard.
 
 ---
 
 ## 📌 Overview
 
-**AeroGuard AI** is designed to simplify aero piston engine health monitoring through a virtual digital twin engine representation and an interactive command dashboard.
+**AeroGuard AI** is designed to simplify aero piston engine health monitoring through a virtual engine representation and an interactive monitoring dashboard.
 
-The system demonstrates how crucial engine parameters can be continuously evaluated to identify potential operating abnormalities before catastrophic in-flight mechanical failure occurs.
+The system demonstrates how crucial engine parameters can be continuously analysed to identify potential operating abnormalities before in-flight failure occurs.
 
 ### Users can:
-* **Monitor** core engine parameters: Temperature, Oil Pressure, Dynamic Vibration, and RPM.
-* **View** an interactive CAD schematic matrix digital twin of an opposed 4-cylinder aero piston engine.
-* **Simulate** 6 real-world engine fault conditions via a dedicated Fault Injection Panel.
-* **Detect** abnormal sensor readings with zero-latency rule-based logic.
-* **Calculate** an illustrative Engine Health Score (0–100 pts) with transparent penalty breakdowns.
-* **Analyze** an illustrative Mission Reliability Score (0–100%) weighted by critical thermodynamic and lubrication factors.
-* **Receive** plain-language, explainable fault alerts paired with prescriptive maintenance suggestions.
-* **Visualize** historical sensor trends and real-time dual-harmonic vibration waveforms.
-* **Export** official maintenance inspection reports and 60-second time-series logs as CSV files.
+* **Monitor** engine temperature, oil pressure, vibration and RPM in real time.
+* **View** a virtual CAD schematic matrix representation of an aero piston engine.
+* **Simulate** 6 different engine fault conditions using the onboard Fault Injection Panel.
+* **Detect** abnormal sensor readings using physical demonstration limits.
+* **Calculate** an illustrative engine health score (0–100 pts).
+* **Analyse** an illustrative mission reliability score (0–100%).
+* **Receive** explainable fault alerts and prescriptive maintenance suggestions.
+* **Visualize** historical sensor trends and live dual-harmonic vibration waveforms.
+* **Download** generated monitoring reports as a CSV file.
 
-> **Note:** The current prototype uses simulated telemetry readings and explainable rule-based fault detection. Real engine sensor hardware integration and validated predictive analytics represent future engineering phases.
+> **Note:** The current prototype uses simulated sensor readings and explainable rule-based fault detection. Real engine sensor hardware integration and validated predictive analytics are future engineering enhancements.
 
 ---
 
@@ -31,30 +31,33 @@ The system demonstrates how crucial engine parameters can be continuously evalua
 
 | Feature | Description |
 | :--- | :--- |
-| ✈️ **Virtual Engine Monitoring** | Interactive CAD schematic of an opposed 4-cylinder aero piston engine updating component status dynamically. |
-| 🌡️ **Sensor Monitoring** | Real-time monitoring of Engine Temperature, Oil Pressure, Dynamic Vibration, and RPM with dual input modes (Presets & Manual Sliders). |
-| 🧪 **Fault Injection Panel** | Real-time simulation of 6 engine failure modes to rigorously evaluate system detection response and latency. |
-| 🔍 **Fault Detection** | Instantaneous identification of abnormal conditions based on physical aerospace operating limits. |
-| ❤️ **Engine Health Score** | Dynamic composite score (0–100 pts) reflecting instantaneous mechanical state (HEALTHY / WARNING / CRITICAL). |
-| 🎯 **Mission Reliability Score** | Forward-looking endurance index (0–100%) based on weighted thermodynamic, structural, and lubrication factors. |
-| 🚨 **Explainable Alerts** | Detailed fault diagnosis highlighting abnormal parameters, actual readings, thresholds, root physical causes, and severity. |
-| 🔧 **Maintenance Suggestions** | Prescriptive ground-crew inspection actions mapped directly to detected abnormalities. |
-| 📈 **Historical Sensor Analysis** | Interactive 60-second trend charts with threshold redlines and directional indicators (Increasing, Decreasing, Stable). |
-| 📊 **Command Dashboard** | Military/aerospace command UI featuring capsule gauges, circular dials, and live vibration waveforms. |
-| 📄 **Reports & CSV Export** | One-click generation and download of complete diagnostic reports and raw telemetry data. |
+| ✈️ **Virtual Engine Monitoring** | Displays an interactive CAD schematic of an aero piston engine updating component status dynamically. |
+| 🌡️ **Sensor Monitoring** | Monitors temperature, oil pressure, vibration and RPM with predefined scenarios and manual slider controls. |
+| 🧪 **Fault Injection Panel** | Simulates 6 different engine faults to evaluate the monitoring system's real-time detection response. |
+| 🔍 **Fault Detection** | Identifies abnormal sensor readings instantaneously using predefined demonstration thresholds. |
+| ❤️ **Engine Health Score** | Calculates an illustrative composite health score (0–100 pts) based on detected abnormalities. |
+| 🎯 **Mission Reliability Score** | Displays an illustrative reliability indicator (0–100%) using weighted engine condition factors. |
+| 🚨 **Explainable Alerts** | Explains detected faults, affected parameters, actual readings, thresholds and root causes. |
+| 🔧 **Maintenance Suggestions** | Provides possible inspection recommendations mapped directly to detected abnormalities. |
+| 📈 **Historical Sensor Analysis** | Displays simulated sensor trends and directional indicators using interactive Plotly graphs. |
+| 📊 **Command Dashboard** | Presents engine monitoring information through an aerospace dark-navy command dashboard with live vibration waveforms. |
+| 📄 **Reports & CSV Download** | Allows users to generate and download comprehensive engine monitoring reports as CSV files. |
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Layer | Technology | Purpose |
+| Layer | Technology | Description |
 | :--- | :--- | :--- |
-| **Programming Language** | Python 3.10+ | Core analytical models, telemetry simulation, and application logic |
+| **Programming Language** | Python 3.10+ | Core analytical models, telemetry simulation and logic |
 | **Frontend / UI** | Streamlit | High-frequency reactive dashboard and telemetry controls |
-| **Numerical Computation** | NumPy | Vectorized math, historical sensor generation, and trend calculation |
-| **Data Processing** | Pandas | Time-series data management, tabular telemetry, and CSV report export |
+| **Numerical Computation** | NumPy | Vectorized math, historical telemetry generation and noise modeling |
+| **Data Processing** | Pandas | Time-series data management, tabular metrics and CSV reporting |
 | **Visualization** | Plotly | Interactive CAD engine schematics and dual-harmonic vibration waveforms |
 | **Styling** | Custom CSS | Deep space navy aerospace theme with glassmorphic monitoring cards |
+| **Testing** | Automated Test Suite | Comprehensive 30-test automated verification script (`test_aeroguard.py`) |
+
+> ⚠️ **Important:** The current prototype uses rule-based anomaly detection and an analytical digital twin. It does not use a black-box machine learning model or connect to physical aircraft engine hardware.
 
 ---
 
@@ -63,12 +66,12 @@ The system demonstrates how crucial engine parameters can be continuously evalua
 ```text
 AeroGuard-AI/
 │
-├── app.py                  # Main Streamlit application with interactive command dashboard & modules
-├── digital_twin.py         # Digital Twin state representation & analytical models
+├── app.py                  # Main Streamlit application with interactive command dashboard & all 12 modules
+├── digital_twin.py         # Analytical Digital Twin models & component health matrix
 ├── engine_simulator.py     # Aero engine telemetry simulation engine
 ├── test_aeroguard.py       # Comprehensive 30-test automated verification suite
 ├── requirements.txt        # Project Python dependencies
-├── README.md               # Complete project documentation & presentation guide
+├── README.md               # Complete project documentation & guide
 └── .gitignore              # Git ignore rules for clean repository state
 ```
 
@@ -77,131 +80,152 @@ AeroGuard-AI/
 ## ⚙️ How It Works
 
 ```text
-       Simulated Engine Telemetry (NumPy)
-                       ↓
-       Data Acquisition & Ingestion (app.py)
-                       ↓
-   Virtual Digital Twin Model (CAD Schematic)
-                       ↓
-          Rule-Based Fault Detection System
-                       ↓
-           ┌───────────┴───────────┐
-           ↓                       ↓
-  Engine Health Score     Mission Reliability Score
-   (Current Condition)       (Endurance Forecast)
-           └───────────┬───────────┘
-                       ↓
-          Explainable Alerts (XAI)
-                       ↓
-      Prescriptive Maintenance Actions
-                       ↓
-   Interactive Command Dashboard (Plotly & CSV)
+    Simulated Engine Sensor Data (NumPy)
+                   ↓
+            Data Collection
+                   ↓
+            Data Processing
+                   ↓
+       Virtual CAD Engine Model
+                   ↓
+         Fault Detection System
+                   ↓
+        ┌──────────┴──────────┐
+        ↓                     ↓
+Engine Health Analysis   Mission Reliability Analysis
+ (Current Condition)        (Endurance Forecast)
+        └──────────┬──────────┘
+                   ↓
+          Explainable Alerts
+                   ↓
+     Maintenance Recommendations
+                   ↓
+   Interactive Dashboard & CSV Export
 ```
 
----
+### Sensor Parameters
 
-## 🎛️ Sensor Operating Envelopes
+The system monitors four core engine parameters:
 
-The system monitors four core engine parameters based on standard aero piston engine operating limits:
-
-| Parameter | Nominal Range | Warning Limit | Critical Threshold | Purpose |
-| :--- | :---: | :---: | :---: | :--- |
-| **Engine Temperature** | 70°C – 105°C | > 110°C | > 125°C | Monitors cylinder head & coolant thermal stress |
-| **Oil Pressure** | 45 – 75 PSI | < 30 PSI | < 25 PSI | Monitors lubrication health and oil line integrity |
-| **Dynamic Vibration** | 1.0 – 5.0 / 10 | > 7.0 / 10 | > 8.5 / 10 | Detects airframe structural and mounting fatigue |
-| **Engine Speed (RPM)**| 2200 – 4800 RPM | > 5000 RPM | > 5400 RPM | Monitors powertrain rotational envelope |
+| Parameter | Nominal Range | Warning Limit | Purpose |
+| :--- | :---: | :---: | :--- |
+| **Engine Temperature** | 70°C – 105°C | > 110°C | Monitors engine operating temperature & cooling efficiency |
+| **Oil Pressure** | 45 – 75 PSI | < 30 PSI | Monitors engine lubrication system pressure |
+| **Vibration** | 1.0 – 5.0 / 10 | > 7.0 / 10 | Identifies abnormal engine & airframe vibration |
+| **RPM** | 2200 – 4800 RPM | > 5000 RPM | Monitors engine rotational speed against approved envelope |
 
 ---
 
 ## 🧪 Fault Injection Scenarios
 
-The onboard Fault Injection Panel allows operators to simulate 6 realistic in-flight failure modes:
+The Fault Injection Panel allows users to test how the application responds to different simulated abnormalities:
 
-| Fault Type | Simulated Condition | Detection Logic | Primary Affected Subsystem |
+| Fault Type | Simulated Condition | Detection Logic | Description |
 | :--- | :--- | :--- | :--- |
-| **Spark Plug Misfire** | Vibration spikes to 8.2/10, RPM drops to 2600 | Vibration > 7.0 limit | Ignition System & Spark Plugs |
-| **Oil Pressure Drop** | Oil pressure drops to 18.0 PSI | Oil Pressure < 30 PSI | Lubrication System & Oil Lines |
-| **Engine Overheating** | Temperature rises to 128.0°C | Temperature > 110°C | Cooling Radiator & Cylinder Heads |
-| **Abnormal Vibration** | Vibration elevates to 9.1/10 | Vibration > 7.0 limit | Engine Mounts & Rotating Assembly |
-| **High RPM** | Engine speed reaches 5450 RPM | RPM > 5000 limit | Propeller Governor & Throttle Linkage |
-| **Sensor Failure** | Out-of-range / open-circuit telemetry (`ERR_OOR`) | Validity Range Check | Avionics Sensor Wiring & Transducers |
+| **Spark Plug Misfire** | Vibration spikes to 8.2/10, RPM drops to 2600 | Vibration > 7.0 | Simulates improper ignition of the fuel-air mixture. |
+| **Oil Pressure Drop** | Oil pressure drops to 18.0 PSI | Oil Pressure < 30 PSI | Simulates a decrease in engine oil lubrication pressure. |
+| **Engine Overheating** | Temperature rises to 128.0°C | Temperature > 110°C | Simulates an abnormal increase in engine temperature. |
+| **Abnormal Engine Vibration** | Vibration elevates to 9.1/10 | Vibration > 7.0 | Simulates unusual engine structural vibration. |
+| **High RPM** | Engine speed reaches 5450 RPM | RPM > 5000 | Simulates engine speed exceeding approved limits. |
+| **Sensor Failure** | Out-of-range reading (`ERR_OOR`) | Validity Range Check | Simulates missing, invalid or disconnected sensor telemetry. |
 
 ---
 
-## 🧠 Health & Reliability Scoring Methodology
+## 🧠 Engine Health & Reliability Analysis
 
 ### 1. Engine Health Score (0–100 pts)
-Evaluates current mechanical status through deduction penalties:
-* **100 pts:** Optimal operating condition (`HEALTHY`).
-* **75–99 pts:** Minor threshold violation (`WARNING`).
-* **< 50 pts:** Multiple or severe threshold violations (`CRITICAL`).
+The demonstration scoring system starts with 100 points and deducts penalties for abnormal readings:
+* **75–100 pts:** `HEALTHY` (All parameters within safe envelope)
+* **50–74 pts:** `WARNING` (One or more parameter threshold breaches)
+* **Below 50 pts:** `CRITICAL` (Severe or multiple concurrent abnormalities)
 
 ### 2. Mission Reliability Score (0–100%)
-Evaluates remaining flight endurance using physics-grounded sub-factor weights:
-$$\text{Reliability} = (0.35 \times R_{\text{oil}}) + (0.25 \times R_{\text{temp}}) + (0.25 \times R_{\text{vib}}) + (0.15 \times R_{\text{rpm}}) - \text{Penalty}_{\text{faults}}$$
+The mission reliability module separately evaluates four weighted factors:
+1. **Lubrication Reliability (35% weight)**
+2. **Thermal Endurance (25% weight)**
+3. **Structural / Vibration (25% weight)**
+4. **Powertrain Speed (15% weight)**
 
-* **75% – 100%:** `GOOD CONDITION` (Nominal mission endurance).
-* **40% – 74%:** `CAUTION` (Elevated thermal or mechanical stress; monitor closely).
-* **Below 40%:** `HIGH RISK` (Immediate mission abort or emergency divert recommended).
+Condition brackets:
+* **75–100%:** `GOOD CONDITION`
+* **40–74%:** `CAUTION`
+* **Below 40%:** `HIGH RISK`
+
+*These scores are illustrative indicators and are not validated predictions of actual aircraft engine reliability or mission success.*
 
 ---
 
 ## 🚀 Installation & Running
 
 ### Prerequisites
-* Python 3.10, 3.11, 3.12, or 3.13
+* Python 3.10 or above
+* pip
 * Git
 
 ### Step-by-Step Setup
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/BhanuGowda05/AeroGuard-AI.git
-cd AeroGuard-AI
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/BhanuGowda05/AeroGuard-AI.git
+   cd AeroGuard-AI
+   ```
 
-# 2. Create and activate a virtual environment
-# Windows:
-python -m venv venv
-venv\Scripts\activate
+2. **Create a virtual environment**
+   * Windows:
+     ```bash
+     python -m venv venv
+     venv\Scripts\activate
+     ```
+   * macOS / Linux:
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
 
-# macOS / Linux:
-python3 -m venv venv
-source venv/bin/activate
+3. **Install dependencies**
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
 
-# 3. Install required dependencies
-pip install -r requirements.txt
+4. **Run the automated test suite (optional but recommended)**
+   ```bash
+   python test_aeroguard.py
+   ```
 
-# 4. Run automated test suite (verifies all 30 tests)
-python test_aeroguard.py
+5. **Run the application**
+   ```bash
+   streamlit run app.py
+   ```
 
-# 5. Launch the AeroGuard AI application
-streamlit run app.py
-```
-
-The application will launch immediately in your default browser at:  
+The application will open automatically at:  
 👉 **`http://localhost:8501`**
 
 ---
 
 ## 💻 How to Use
 
-1. **Explore the Command Center:** Navigate to `1. Home Dashboard` to see real-time capsule dials, the prominent CAD Digital Twin, parameters, active alerts, and live vibration waveforms.
-2. **Switch Predefined Scenarios:** Use the sidebar to switch between `Healthy`, `Warning`, and `Critical` flight presets.
-3. **Test Manual Slider Inputs:** Switch to `Manual Input` and adjust temperature, oil pressure, vibration, and RPM sliders to simulate custom operating conditions.
-4. **Inject Live Faults:** Open `6. Fault Injection Panel`, select an in-flight fault (e.g., *Oil Pressure Drop* or *Spark Plug Misfire*), and click **Start Fault Simulation**.
-5. **Inspect Explainable Alerts:** Review plain-language root causes and suggested maintenance actions in `8. Explainable Alerts with Suggestions`.
-6. **Analyze Historical Trends:** Open `9. Historical Sensor Analysis` to examine 60-second parameter trends and redlines.
-7. **Export Maintenance Reports:** Navigate to `11. Reports and CSV Download` to download full executive monitoring reports and telemetry logs.
+* **Step 1 – Open the Dashboard:** Launch AeroGuard AI and explore the command center on `1. Home Dashboard`.
+* **Step 2 – Monitor Engine Parameters:** View temperature, oil pressure, vibration and RPM via capsule gauges and circular dials.
+* **Step 3 – Select Sensor Readings:** Choose predefined `Healthy`, `Warning` or `Critical` presets, or adjust sliders in `Manual Input` mode.
+* **Step 4 – Simulate Engine Faults:** Navigate to `6. Fault Injection Panel`, select a fault from the dropdown, and click **Start Fault Simulation**.
+* **Step 5 – Analyse Engine Health:** Observe the instantaneous Engine Health Score and forward-looking Mission Reliability indicator.
+* **Step 6 – View Explainable Alerts:** Check `8. Explainable Alerts with Suggestions` for plain-language root causes and maintenance inspection actions.
+* **Step 7 – Analyse Historical Trends:** Explore `9. Historical Sensor Analysis` to inspect parameter trend lines and directional indicators.
+* **Step 8 – Export CSV Reports:** Go to `11. Reports and CSV Download` to download a complete monitoring report.
 
 ---
 
 ## 🔮 Future Enhancements
 
-* Real-time integration with physical engine sensors via standard aerospace protocols (**ARINC 429, CAN aerospace, MAVLink**).
-* Edge AI deployment on SWaP-constrained UAV mission computers (NVIDIA Jetson, ARM Cortex).
-* Remaining Useful Life (**RUL**) prediction using Weibull survival degradation models.
-* High-frequency acoustic FFT spectral analysis to detect cylinder micro-cracking prior to vibration threshold breaches.
-* Multi-engine synchronization for twin-engine tactical UAV architectures.
+* Real-time integration with physical engine sensors.
+* Integration with UAV engine monitoring systems and telemetry (ARINC 429 / CAN / MAVLink).
+* Machine learning-based fault prediction.
+* Historical engine degradation analysis.
+* Remaining Useful Life (RUL) estimation using Weibull models.
+* Advanced physics-based digital twin modelling.
+* Multi-engine monitoring for twin-propeller UAVs.
+* Mission-condition-based engine performance analysis.
+* Validated predictive maintenance models.
 
 ---
 
@@ -209,9 +233,9 @@ The application will launch immediately in your default browser at:
 
 * **Project Name:** AeroGuard AI
 * **Domain:** Artificial Intelligence / Aerospace / Digital Twin Technology
-* **Application Area:** Aero Piston Engine Health Monitoring for MALE UAVs
+* **Application Area:** Aero Piston Engine Monitoring for MALE UAVs
 * **Project Type:** AI in Defence Hackathon Prototype
-* **Development Approach:** Software-Based Analytical Digital Twin Demonstrator
+* **Development Approach:** Software-Based Digital Twin Demonstrator
 
 ---
 
@@ -228,6 +252,5 @@ The application will launch immediately in your default browser at:
 
 ---
 
-## 📄 Disclaimer
-
-*AeroGuard AI is an educational and hackathon demonstration prototype utilizing simulated engine telemetry. Its scores, thresholds, fault simulations, and maintenance recommendations are illustrative only. It is not an aviation-certified monitoring system and must not replace approved aircraft maintenance manuals or operational flight procedures.*
+### 📄 Disclaimer
+*AeroGuard AI is an educational and hackathon prototype using simulated engine data. Its scores, thresholds, fault simulations and maintenance suggestions are illustrative only. It is not an aviation-certified monitoring system and must not be used for real aircraft operational or maintenance decisions.*
