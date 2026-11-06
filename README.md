@@ -241,10 +241,10 @@ The application will open automatically at:
 
 ## 👩‍💻 Developed By
 
-* **Bhanushree G**
+ **Bhanushree G**
 
-* **Department:** Computer Science and Engineering – Data Science  
-* **Institution:** Nagarjuna College of Engineering and Technology (NCET)
+ **Department:** Computer Science and Engineering – Data Science  
+ **Institution:** Nagarjuna College of Engineering and Technology (NCET)
 
 ---
 
